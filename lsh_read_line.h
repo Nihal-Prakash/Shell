@@ -1,4 +1,4 @@
-#define LSH_RL_BUFSIZE 1024;
+#define LSH_RL_BUFSIZE 1024
 
 char* lsh_read_line(){
     int bufsize = LSH_RL_BUFSIZE;
@@ -12,7 +12,7 @@ char* lsh_read_line(){
     }
 
     while(1){
-        c = getchar;
+        c = getchar();
 
         if (c == EOF || c == '\n') {
             buffer[position] = '\0';
